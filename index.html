@@ -3,133 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Portafolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Santiago Zuluaga</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">Portafolio</a>
+            <a class="navbar-brand" href="./index.html">
+                <strong>Santiago Zuluaga</strong>
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto collapse-nav">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                        <a class="nav-link" href="#aboutme">Sobre mi</a>
                     </li>
-                    <!--
-                        <li class="nav-item">
-                        <a class="nav-link" href="./blog.html">Blog</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Habilidades</a>
                     </li>
-                    -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactme">Contáctame</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </nav>   
-
-    <div class="profile">
+    </nav>
+    
+    <div id="home" class="home bg-black vertical-center">
         <div class="container">
             <div class="row text-center">
+                <div class="col align-middle">
+                    <img class="profile-photo" src="./images/profile.jpg" width="280" alt="Foto de perfil">
+                    <h1>Hola, soy Santiago</h1>
+                    <h3>Desarrollador web y de videojuegos</h3>
+                    <p>Front-end developer junior | Desarrollador de videojuegos indie</p>
+                    <a href="https://www.instagram.com/santiagozuluagahernandez/" target="_blank">
+                        <img class="images-social" src="./images/instagram.svg" width="50" alt="logo instagram">
+                    </a>
+                    <a href="https://github.com/Santiagozh1998" target="_blank">
+                        <img class="images-social" src="./images/github.svg" width="50" alt="logo github">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="aboutme" class="aboutme">
+        <div class="container">
+            <div class="row">
                 <div class="col">
-                    <img class="profile-photo" src="./images/profile.jpg" width="250px">
-                    <h1>Santiago Zuluaga Hernandez</h1>
-                    <h3>Aprendiendo sobre desarrollo web y de videojuegos</h3>
-                    <a href="https://www.instagram.com/santiagozuluagahernandez/">
-                        <img class="images-social" src="./images/instagram.svg" width="60px">
-                    </a>
-                    <a href="https://github.com/Santiagozh1998">
-                        <img class="images-social" src="./images/github.svg" width="60px">
-                    </a>
+                    <h3 class="title-portfolio">Resumido así no más</h3>
+                    <p>
+                        Soy Santiago Zuluaga, estudiante caleño de sexto semestre de la Tecnología en Sistemas de la información de la Universidad del Valle. 
+                        Próximamente, seré estudiante en la Ingeniería en Sistemas de la misma institución. Me describo como una persona
+                        que es amante de mantenerse en movimiento, de seguir aprendiendo siempre, de vivir de lo que se ama y del café.
+                        <br><br>
+                        Aprendiz y desarrollador en tecnologías del Front-end como Vue.js, Quasar Framework y Bootstrap, 
+                        de tecnologías del Back-end tales como Node y Golang, y del Game Engine Godot. 
+                        <br><br>
+                        Aquí podrás encontrar información acerca de mi, de los proyectos que voy desarrollando y
+                        de mi evoluación a través de los años en el mundo de la tecnología.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container">
-        <div class="row text-center">
-            <div class="section-info col col-12 col-lg-12">
-                <h3 class="text-center">Resumido así no más</h3>
-                <p>
-                    Estudiante de tecnología en sistemas en la Universidad del Valle. Desarrollador junior. Aprendiz de tecnologías web: Javascript, Node.js, Vue y React. Aprendiz de Game engines: Unity y Godot. Miembro activo del proyecto Neurófilos.
-                </p>
-            </div>
-            <div class="section-info col col-12 col-lg-12">
-                <h3 class="text-center">¿Qué podrás encontrar acá?</h3>
-                <p>
-                    Esta página surgió como necesidad de tener un lugar en donde poder subir mis proyectos personales, académicos y profesionales, dando a conocer mi trabajo y como práctica en mi aprendizaje de Vuejs. En esta página se estarán subiendo todos los proyectos realizados para mejorar mis habilidades en tecnologías web y mucho más.
-                </p>
-            </div>
-            <div class="section-info col col-12 col-lg-12">
-                <h3  class="text-center">Contacto</h3>
-                <p>
-                    Puedes comunicarte conmigo a travéz de mi Instagram @santiagozuluagahernandez, o mediante un correo a: santiagozh1998@gmail.com.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="skills">
+    
+    <div id="skills" class="skills">
         <div class="container">
-            <h3>Skills y experiencia</h3>
+            <h3 class="title-portfolio">Habilidades</h3>
+            <div class="row text-center">
+
+                <div class="col-6 col-lg-2">
+                    <h4 class="title-type-skills">Game engine:</h4>
+                    <img onclick="seeModal('Godot')" src="./images/Skills/godot.svg" height="100" alt="logo godot">
+                    <p>Godot</p>
+                </div>
+                
+                <div class="col-6 col-lg-2">
+                    <h4 class="title-type-skills">Diseños:</h4>
+                    <img onclick="seeModal('Gravit Designer')" src="./images/Skills/gravit.png" height="100" alt="logo godot">
+                    <p>Gravit Designer</p>
+                </div>
+
+                <div class="col-12 col-lg-8">
+                    <h4 class="title-type-skills">Back-end:</h4>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col">
+                                <img onclick="seeModal('PostgreSQL')" src="./images/Skills/postgresql.png" height="100" alt="logo postgresql">
+                                <p>PostgreSQL</p>
+                            </div>
+                            <div class="col">
+                                <img onclick="seeModal('MongoDB')" src="./images/Skills/mongodb.png" height="100" alt="logo mongo">
+                                <p>MongoDB</p>                                
+                            </div>
+                            <!--
+                            <div class="col">
+                                <img onclick="seeModal('Firebase')" src="./images/Skills/firebase.png" height="100" alt="logo firebase">
+                                <p>Firebase</p>
+                            </div>
+                            -->
+                            <div class="col">
+                                <img onclick="seeModal('Golang')" src="./images/Skills/go.png" height="100" alt="logo go">
+                                <p>Golang</p>
+                            </div>
+                            <div class="col">
+                                <img onclick="seeModal('Node.js')" src="./images/Skills/node.jpg" height="100" alt="logo node">
+                                <p>Node.js</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-12">
+                    <h4 class="title-type-skills">Front-end:</h4>
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col">
+                                <img onclick="seeModal('HTML5')" src="./images/Skills/html5.png" height="100">
+                                <p>HTML5</p>
+                            </div>
+                            <div class="col">
+                                <img onclick="seeModal('CSS3')" src="./images/Skills/css3.png" height="100">
+                                <p>CSS3</p>
+                            </div>
+                            <div class="col">
+                                <img onclick="seeModal('Javascript')" src="./images/Skills/javascript.png" height="100">
+                                <p>Javascript</p>
+                            </div>
+                            <div class="col">
+                                <img onclick="seeModal('Bootstrap 4')" src="./images/Skills/bootstrap.png" height="100" alt="logo bootstrap">
+                                <p>Bootstrap 4</p>
+                            </div>
+                            <!--
+                            <div class="col">
+                                <img onclick="seeModal('React.js')" src="./images/Skills/React.png" height="100" alt="logo react">
+                                <p>React.js</p>
+                            </div>
+                            -->
+                            <div class="col">
+                                <img onclick="seeModal('Vue.js')" src="./images/Skills/Vue.png" height="100" alt="logo vue">
+                                <p>Vue.js</p>
+                            </div>
+                            <div class="col">
+                                <img onclick="seeModal('Quasar')" src="./images/Skills/quasar.svg" height="100" alt="logo quasar">
+                                <p>Quasar</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    
+    <div id="projects" class="projects">
+        <div class="container text-center">
+            <h3 class="title-portfolio">Proyectos</h3>
             <div class="row justify-content-center">
-                <div class="ability col col-5 col-lg-2 text-center">
-                    <img src="./images/Vue.png" width="100">
-                    <h4>Vue</h4>
-                    <p>Manejo: 7/10</p>
+                <div class="col-12 col-lg-4 margin-project">
+                    <h4>BooksApp</h4>
+                    <a href="https://santiagozh1998.github.io/BooksApp/" target="_blank">
+                        <figure class="figure">
+                            <img class="rounded image-projects" src="./images/BooksApp.png" alt="booksapp">
+                            <figcaption class="figure-caption text-center">Tecnologías: Vuejs, Bootstrap, Golang</figcaption>
+                        </figure>
+                    </a>
                 </div>
-                <div class="ability col col-5 col-lg-2 text-center">
-                    <img src="./images/React.png" width="100">
-                    <h4>React</h4>
-                    <p>Manejo: 5/10</p>
+                <div class="col-12 col-lg-4 margin-project">
+                    <h4>RickandMortyApp</h4>
+                    <a href="https://santiagozh1998.github.io/RickandMorty/" target="_blank">
+                        <figure class="figure">
+                            <img class="image-projects" src="./images/RickandMorty.png" alt="rickandmortyapp">
+                            <figcaption class="figure-caption text-center">Tecnologías: Vuejs, Bootstrap</figcaption>
+                        </figure>
+                    </a>
                 </div>
-                <div class="ability col col-5 col-lg-2 text-center">
-                    <img src="./images/node.jpg" width="100">
-                    <h4>Node js</h4>
-                    <p>Manejo: 7/10</p>
-                </div>
-                <div class="ability col col-5 col-lg-2 text-center">
-                    <img src="./images/firebase.png" width="100">
-                    <h4>Firebase</h4>
-                    <p>Manejo: 5/10</p>
-                </div>
-                <div class="ability col col-5 col-lg-2 text-center">
-                    <img src="./images/java.png" width="100">
-                    <h4>Java</h4>
-                    <p>Manejo: 7/10</p>
-                </div>
-                <div class="ability col col-5 col-lg-2 text-center">
-                    <img src="./images/godot.svg" width="100">
-                    <h4>Godot</h4>
-                    <p>Manejo: 5/10</p>
-                </div>
-                <div class="ability col col-5 col-lg-2 text-center">
-                    <img src="./images/mongo.jpg" width="100">
-                    <h4>MongoDB</h4>
-                    <p>Manejo: 5/10</p>
-                </div>
-                <div class="ability col col-5 col-lg-2 text-center">
-                    <img src="./images/postgresql.png" width="100">
-                    <h4>PostgreSQL</h4>
-                    <p>Manejo: 5/10</p>
+                <div class="col-12 col-lg-4 margin-project">
+                    <h4>TasksNode</h4>
+                    <a href="https://tasksnode.herokuapp.com/" target="_blank">
+                        <figure class="figure">
+                            <img class="image-projects" src="./images/TasksNode.png" alt="tasksnode">
+                            <figcaption class="figure-caption text-center">Tecnologías: Node, Express, Ejs</figcaption>
+                        </figure>
+                    </a>
                 </div>
             </div>
-        </div>  
+        </div> 
+    </div>
+    
+    <div id="contactme" class="contactme">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <h3 class="title-portfolio">Contáctame</h3>
+                    <p>Si quieres hablar sobre algun proyecto o solamente quieres saludarme, puedes escribirme que con gusto responderé: </p>
+                    <a href="mailto:santiagozh1998@gmail.com">santiagozh1998@gmail.com</a>
+                    <br>
+                    <a href="mailto:santiago.zuluaga@correounivalle.edu.co">santiago.zuluaga@correounivalle.edu.co</a>
+                </div>
+                <div class="col-12">
+                    <a href="https://github.com/Santiagozh1998" target="_blank">
+                        <img class="images-social" src="images/github-image.png" width="50" alt="logo github">
+                    </a>
+                    <a href="mailto:santiagozh1998@gmail.com" target="_blank">
+                        <img class="images-social" src="images/gmail.png" width="50" alt="logo gmail">
+                    </a>
+                    <a href="https://www.instagram.com/santiagozuluagahernandez/" target="_blank">
+                        <img class="images-social" src="images/instagram.png" width="50" alt="logo gmail">
+                    </a>
+                </div>
+            </div>
+        </div> 
     </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p>
-                Santiago Zuluaga Hernandez - @ 2019
-            </p>
-        </div>
+    <footer>
+        <p class="text-center">Made by Santiago Zuluaga - 2020</p>
     </footer>
-     
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script>
+        var modalactive = "";
+        var seeModal = (Modal) => {
+            if(modalactive == ""){
+                modalactive = Modal;
+                console.log("Modal: " + modalactive)
+            }
+            else {
+                console.log("Cambiando Modal: " + modalactive)
+                modalactive = Modal;
+                console.log("Modal: " + modalactive)
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--
+        Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    -->
 </body>
 </html>
