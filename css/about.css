@@ -20,7 +20,7 @@
     display: grid;
 }
 
-.col-1, .col{
+.col-1{
     text-align: center;
 }
 
@@ -46,10 +46,6 @@ figcaption{
 }
 
 @media (max-width: 1200px) {
-    .col{
-        display: none;
-    }
-
     .row-2{
         grid-template-columns: repeat(4, 1fr);
     }
@@ -61,10 +57,6 @@ figcaption{
 }
 
 @media (max-width: 720px) {
-    .col{
-        display: none;
-    }
-
     .row-2{
         grid-template-columns: 1fr 1fr;
     }
