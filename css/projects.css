@@ -1,0 +1,33 @@
+.container-projects, .container-contact{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.image-project{
+    width: 300px;
+}
+
+.row-3{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.col-3, .col-4{
+    text-align: center;
+}
+
+.footer{
+    background: #6C63FF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.container-contact{
+    text-align: center;
+}

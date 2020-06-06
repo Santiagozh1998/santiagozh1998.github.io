@@ -1,0 +1,85 @@
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    position: absolute;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar ul li a{
+    font-size: 15px;
+    color: white;
+    margin-left: 10px;
+}
+
+label #sign-one, label #sign-two{
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+#res-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    label #sign-one{
+        display: block;
+    }
+
+    .navbar ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 10vh;
+        left: -100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        transition: .5s;
+        z-index: 10;
+    }
+
+    .navbar ul li{
+        display: block;
+        margin: 40px 0;
+        line-height: 30px;
+        background: white;
+    }
+    
+    .navbar ul li a{
+        margin-left: 0px;
+        font-size: 20px;
+        color: #6C63FF; 
+    }
+    
+    #res-menu:checked ~ul{
+        left: 0;
+    }
+
+    #res-menu:checked ~ label #sign-one{
+        display: none;
+    }
+
+    #res-menu:checked ~ label #sign-two{
+        display: block;
+    }
+}
